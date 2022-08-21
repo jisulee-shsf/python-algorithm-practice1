@@ -13,7 +13,7 @@
 - 2개의 for문을 사용한 two loops 방식을 하나의 for문으로 합쳐 문제 처리 방식을 개선
 - 모든 input을 딕셔너리로 저장하지 않고 정답을 찾을 시 함수를 빠져나올 수 있으나, 두 번째 값을 찾는 비교 작업으로 풀이 속도에 큰 향상은 없음  
 ##  
-#### ► [04_3sum_01_220816 / brute-force] & [05_3sum_02_220817 / two pointers]
+#### ► [04_3sum_01_220816] / brute-force & [05_3sum_02_220817] / two pointers
 - 04_3sum_01_220816 : brute-force 방식 진행으로 인해, time limit exceeded 발생
 - 05_3sum_02_220817 : sum이 0인 경우에 대한 스킵 처리를 하지 않아 wrong answer 발생 > test case '[-2,0,0,2,2]'에서 예외 발생
 ####  
@@ -35,7 +35,9 @@
 - 08_array_partition_02_220819 구현 방식을 python slicing의 pythonic 방법을 통해 코드를 더욱 간결하게 구현
 - sum(sorted(nums)[::2]) : 정렬된 nums를 처음부터 끝까지 2칸씩 우측으로 이동하며 각 값을 합산
 ##  
-#### ► [10_best_time_to_buy_n_sell_stock_220821] / replace maximum value
+#### ► [10_best_time_to_buy_n_sell_stock_220821] / replace maximum value  
+- 현재 값이 우측으로 이동하며 이전 min_price와의 차이를 계산한 값이 기존 profit보다 클 경우, 최댓값을 교체하는 방식 진행
+- sys를 활용해 -sys.minsize & sys.maxsize를 사전 설정하나, 입력값이 []인 경우를 대비해 -sys.minsize를 0으로 대체
 ##   
 #### ► [submissions]  
-<img width="942" alt="image" src="https://user-images.githubusercontent.com/109773795/185763381-84327ff0-25e6-4598-8cb3-e50d46e05250.png">
+<img width="942" alt="image" src="https://user-images.githubusercontent.com/109773795/185763381-84327ff0-25e6-4598-8cb3-e50d46e05250.png">  
