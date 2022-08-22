@@ -15,20 +15,20 @@
 ##  
 #### ► [04_3sum_01_220816] / brute-force & [05_3sum_02_220817] / two pointers
 - 04_3sum_01_220816 : brute-force 방식 진행으로 인해, time limit exceeded 발생
-- 05_3sum_02_220817 : sum이 0인 경우에 대한 스킵 처리를 하지 않아 wrong answer 발생 > test case '[-2,0,0,2,2]'에서 예외 발생
+- 05_3sum_02_220817 : sum이 0인 경우에 대한 스킵 처리를 하지 않아 test case '[-2,0,0,2,2]'에서 wrong answer 발생
 ####  
 #### ► [06_3sum_03_220817] / two pointers  
 - left & right two pointers를 설정해 sum의 합을 조절하며 sum이 0이 되는 3개의 elements 추출  
-- two pointers를 사용하기 위해 sort() 함수를 활용해 배열을 간소화한 뒤 풀이 진행  
-- sum이 0보다 작으면 left pointer를 우측으로 이동하고, 0보다 크면 right pointer를 좌측으로 이동하여 값을 확인  
-- sum이 0인 경우, left & right 각 pointer 양 옆에 동일한 값이 있을 수 있으므로 중복을 제거하기 위한 스킵 처리 조건 설정  
+- two pointers를 사용하기 위해 sort() 함수로 배열을 간소화한 뒤 풀이 진행  
+- sum이 0보다 작으면 left pointer를 우측으로 이동하고, 0보다 크면 right pointer를 좌측으로 이동하여 값 확인  
+- sum이 0인 경우, left & right 각 pointer 양옆에 동일한 값이 있을 수 있으므로 중복을 제거하기 위한 스킵 처리 조건 설정  
 ##  
 #### ► [07_array_partition_01_220819] / ascending order  
 - n개 pair의 min(a, b) 합이 가장 큰 수를 찾기 위해, 정렬된 2n 배열의 len(pair)가 2인 경우의 min 값을 추출  
 - 오름차순 또는 내림차순으로 정렬된 배열의 인접 요소를 페어로 만들 경우, 최대 합을 구할 수 있음 / e.g. min(1, 2) + min(3, 4) = 4  
 ####  
 #### ► [08_array_partition_02_220819] / even order 
-- 2n 배열을 정렬할 경우 짝수 번째 index에 항상 min 값이 존재함을 활용해 코드를 간결하게 구현
+- 2n 배열을 정렬할 경우, 짝수 번째 index에 항상 min 값이 존재함을 활용해 코드를 간결하게 구현
 - e.g. nums = [1, 2, 3, 4] > min(1, 2) + min(3, 4) = nums[0] + nums[2]
 ####  
 #### ► [09_array_partition_03_220819] / pythonic way
@@ -36,7 +36,7 @@
 - sum(sorted(nums)[::2]) : 정렬된 nums를 처음부터 끝까지 2칸씩 우측으로 이동하며 각 값을 합산
 ##  
 #### ► [10_best_time_to_buy_n_sell_stock_220821] / replace maximum value  
-- 현재 값이 우측으로 이동하며 이전 min_price와의 차이를 계산한 값이 기존 profit보다 클 경우, 최댓값을 교체하는 방식 진행
+- 현재 값이 우측으로 이동하며 이전 min_price와의 차이를 계산한 값이 기존 profit보다 클 경우, 최댓값으로 교체하는 방식 진행
 - sys를 활용해 -sys.minsize & sys.maxsize를 사전 설정하나, 입력값이 []인 경우를 대비해 -sys.minsize를 0으로 대체
 ##   
 #### ► [submissions]  
