@@ -25,6 +25,7 @@
 <img src="https://user-images.githubusercontent.com/109773795/184552333-90075e05-7666-4cb8-abac-4d12a104281d.png" width="600" height="120"/>  
 <img src="https://user-images.githubusercontent.com/109773795/184552334-e1648472-9668-417f-a0b9-de62f2448464.png" width="800" height="90"/>  
 
+##  
 #### ► [05_longest_palindromic_substring_220814] / two pointers  
 - two pointer가 input을 슬라이딩 윈도우처럼 조회할 때, palindrome을 판별할 경우 중앙을 중심으로 pointer를 확장해 가장 긴 값을 저장  
 - input 길이가 two pointers 조회에 적합지 않거나 문자열 역순이 이미 palindrome일 경우를 사전 예외 처리하여 풀이 속도를 향상 시킴  
