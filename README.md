@@ -2,7 +2,7 @@
 ## Intro  
 - 본 repository는 파이썬 알고리즘 인터뷰 도서를 기반으로, LeetCode 독학 내용을 개인 복습용으로 정리했습니다.  
 - 첨부된 파일 내의 모든 코드는 필사하여 학습 후 직접 작성했으며, 학습 진도에 맞춘 세부 contents는 하기와 같습니다.  
-- 8/26(금) 이후 학습은 'python-algorithm-practice' repository 내 학습 완료 후 진행 및 업로드 예정입니다.
+- ✔︎ 8/26(금) 이후 학습은 'python-algorithm-practice' repository 내 학습 완료 후 진행 및 업로드 예정입니다.  
 ####  
 ## Contents  
 #### ► [01_string_manipulation]  
